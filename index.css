@@ -1,0 +1,17 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.carrosel2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

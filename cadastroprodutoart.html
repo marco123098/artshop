@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Shop</title>
+
+    <!-- Inclua o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <div class="logo">
+        <img src="data:image/png;base64,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"
+            alt="">
+    </div>
+    <!-- Barra de Navegação Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+        <a class="navbar-brand" href="/">Art Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Página Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cadastroprodutoart.html">Cadastro de Pessoa</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Cadastrar Produto Art</h2>
+        <form action="/cadastroproduto" method="post">
+            <div class="form-group">
+                <label for="id_produtoart">ID do Produto Art:</label>
+                <input type="number" class="form-control" id="id_produtoart" name="id_produtoart" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" class="form-control" id="descricao" name="descricao">
+            </div>
+            <div class="form-group">
+                <label for="artista">Artista:</label>
+                <input type="text" class="form-control" id="artista" name="artista">
+            </div>
+            <div class="form-group">
+                <label for="datacriacao">Data de Criação:</label>
+                <input type="date" class="form-control" id="datacriacao" name="datacriacao">
+            </div>
+            <div class="form-group">
+                <label for="quantidadeestoque">Quantidade em Estoque:</label>
+                <input type="number" class="form-control" id="quantidadeestoque" name="quantidadeestoque">
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+
+<!-- Inclua o JavaScript do Bootstrap e jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
