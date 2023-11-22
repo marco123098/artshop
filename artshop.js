@@ -42,10 +42,10 @@ app.post("/cadastrousuario", async(req, res)=>{
 });
 
 const ProdutoArtSchema = new mongoose.Schema({
-    id_produtoart : {type : Number, required : true},
+    id_produtoart : {type : String, required : true},
     descricao : {type : String},
     artista : { type : String},
-    datacriacao : {type : Date},
+    datacriacao : {type : String},
     quantidadeestoque : {type : Number}
 });
 
